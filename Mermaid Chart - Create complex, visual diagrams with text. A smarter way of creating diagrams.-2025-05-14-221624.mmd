@@ -1,0 +1,34 @@
+classDiagram
+    class Animal {
+        +String nombre
+        +Int edad
+        +String habitat
+        +String tipoAlimentacion
+        +hacerSonido()
+        +mover()
+    }
+
+    class Mamifero {
+        +String tipoPelo
+        +alimentarCrias()
+    }
+
+    class Reptil {
+        +String tipoEscamas
+        +ponerseAlSol()
+    }
+
+    class Ave {
+        +String tipoPlumas
+        +volar()
+    }
+
+    class Pez {
+        +String tipoAletas
+        +nadar()
+    }
+
+    Animal <|-- Mamifero
+    Animal <|-- Reptil
+    Animal <|-- Ave
+    Animal <|-- Pez
